@@ -293,12 +293,7 @@ local ResetCharacter = RightGroupbox:AddButton('Refresh Character', function()
     plr.Character:WaitForChild('HumanoidRootPart')
     if respawntoPosition == true then 
 
-        wait(.5)
-    local tick = tick()
-    repeat 
-        wait()
-        root.CFrame = pos
-    until tick() - tick > 1
+        
 root.CFrame = pos
 -- local time = 0 
 -- repeat 
