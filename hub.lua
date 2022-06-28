@@ -292,9 +292,17 @@ local ResetCharacter = RightGroupbox:AddButton('Refresh Character', function()
     game:GetService("ReplicatedStorage").Events.Load:FireServer(unpack(args))
     plr.Character:WaitForChild('HumanoidRootPart')
     if respawntoPosition == true then 
+wait(.5)
+
+local tick = 1
+
+repeat 
+    wait()
+    tick+=0.5
+    root.CFrame = pos
+until tick == 2.5
 
 
-root.CFrame = pos
 -- local time = 0 
 -- repeat 
 --     wait(.5) 
