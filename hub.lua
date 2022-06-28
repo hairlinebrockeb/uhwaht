@@ -5,7 +5,7 @@
 --// Verification System
 
 
-getgenv().Key = 'x7kerhw8Hjry32jnK'
+
 
 local key = getgenv().Key 
 
